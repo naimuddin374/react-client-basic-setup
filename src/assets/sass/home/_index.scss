@@ -1,0 +1,67 @@
+/*
+    HOME PAGE STYLE
+*/
+// Banner
+#banner{
+    width: 100%;
+    clear: both;
+
+    .carousel{
+        .carousel-item{
+            img{
+                width: 100%;
+            }
+            .carousel-caption{
+                background-color: #1515151f;
+                padding: 5px 0;
+            }
+        }
+    }
+}
+
+
+// PROMOTE SECTION
+#promote-wrapper{
+    .box{
+        width: calc(50% - 10px);
+        float: left;
+        cursor: pointer;
+        overflow: hidden;
+        &:first-child{
+            margin-right: 10px;
+        }
+        &:last-child{
+            margin-left: 10px;
+        }
+        img{
+            width: 100%;
+            transform: scale(1);
+            transition: transform 1s;
+            border-radius: 10px;
+            &:hover{
+                transform: scale(1.1);
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+
+// How It Work
+#how-it-work{
+    p{
+        padding-bottom: 20px;
+    }
+    .card-img{
+        width: 100%;
+        overflow: hidden;
+        cursor: pointer;
+        img{
+            transform: scale(1);
+            transition: transform 1s;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+}

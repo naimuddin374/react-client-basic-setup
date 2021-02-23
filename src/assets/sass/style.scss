@@ -1,0 +1,32 @@
+/*
+    Template: Main Style.file
+*/
+
+
+/* BOOTSTRAP */
+@import 'bootstrap/scss/bootstrap.scss';
+// @import 'fontawesome-free/scss/fontawesome.scss';
+// @import 'bootstrap/scss/bootstrap.scss';
+
+
+/* GOOGLE FONT */
+// @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+
+
+
+// TEMPLATE FILES 
+@import './include/variables';
+@import './include/global';
+@import './include/header';
+
+
+// HOME SECTION
+@import './home';
+@import './authentication';
+
+
+
+// FOOTER SECTION
+@import './include/footer';

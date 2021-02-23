@@ -1,0 +1,75 @@
+
+#header{
+    .nav-wrapper{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999; 
+        padding-top: 10px;
+        background-color: #fffafa38;        
+
+        .container{
+            overflow-x: initial;
+            background-color: transparent;
+        }
+
+        .navbar{
+            .collapse{
+                .navbar-nav{
+                    padding: 20px;
+                    .nav-item{
+                        text-align: center;
+                        margin:0 5px;
+
+                        &:hover{
+                            border-bottom: 3px solid #f90b09;
+                            a{
+                                padding-bottom: 1px;
+                            }
+                        }
+
+                        a{
+                            width: 100%;
+                            text-decoration: none;
+                            display: block;
+                            color: red;
+                        }
+                        
+                        &:last-child{
+                            margin-right: 0;
+                        }
+
+                        @media screen and (max-width: $mobileXl){
+                            a{
+                                color: $light !important;
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: $tablet){
+                background-color: $purple;
+            }
+            .site-logo{
+                width: 80px;
+            }
+
+            button.navbar-toggler{
+                >svg{
+                    color: $light;
+                }
+            }
+        }
+    }
+    .sticky-nav{
+        background-color: $light;
+        padding-top: 0;
+        -webkit-box-shadow: 0px 2px 5px 0px rgba(204,204,204,1);
+        -moz-box-shadow: 0px 2px 5px 0px rgba(204,204,204,1);
+        box-shadow: 0px 2px 5px 0px rgba(204,204,204,1);
+    }
+    
+
+}
